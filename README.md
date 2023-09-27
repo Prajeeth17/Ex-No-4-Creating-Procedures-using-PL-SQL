@@ -24,8 +24,8 @@ INSERT INTO employee(empid, empname, dept, salary)
 VALUES (3,'Jones','Finance',55000);
 COMMIT;
 FOR emp_rec IN (SELECT * FROM employee) LOOP
-DBMS_OUTPUT.PUT_LINE('Employee ID: ' || emp_rec.empid || 'Name' || emp_rec.empname || 'Department' ||
-emp_rec.dept || 'Salary' || emp_rec.salary);
+DBMS_OUTPUT.PUT_LINE('Employee ID: ' || emp_rec.empid || 'Name' || emp_rec.empname || 'Department'
+|| emp_rec.dept || 'Salary' || emp_rec.salary);
 END LOOP;
 END;
 /
